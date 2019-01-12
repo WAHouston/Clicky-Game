@@ -1,28 +1,49 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+import Jumbotron from "./components/Jumbotron"
+import Card from "./components/Card"
+import Wrapper from "./components/Wrapper"
+import cards from "./cards.json"
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+class App extends React.Component {
+    state = {
+        cards: cards.map((card) => {
+            card.clicked = false
+            return card
+        }),
+        score: 0,
+        topScore: 0
+    }
+    
+    clicked = (id) => {
+        this.setState({
+            cards: this.state.cards.map((card) => {
+                if (card.id === id) {
+                    card.clicked = true
+                }
+                return card
+            })
+        })
+    }
+    
+    render() {
+        return (
+            <Wrapper>
+                <Header />
+                <Jumbotron />
+                {this.state.cards.map(card => (
+                    <Card
+                    id={card.id}
+                    key={card.id}
+                    image={card.image}
+                    clicked
+                    />
+                ))}
+                <Footer />
+            </Wrapper>
+        )
+    }
 }
 
-export default App;
+export default App
