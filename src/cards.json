@@ -51,12 +51,12 @@
     },
     {
         "id": 11,
-        "src": "/images/goblin/jpg",
+        "src": "/images/goblin.jpg",
         "alt": "goblin"
     },
     {
         "id": 12,
-        "src": "/images/modron",
+        "src": "/images/modron.jpg",
         "alt": "modron"
     }
 ]

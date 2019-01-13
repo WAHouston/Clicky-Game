@@ -2,7 +2,12 @@ import React from "react"
 import "./style.css"
 
 function Jumbotron(props) {
-    return <h1 className="jumbotron">{props.children}</h1>
+    return (
+            <div className="jumbotron">
+                <h1>Dungeon Clicker</h1>
+                <h3><i>Only click each creature once!</i></h3>
+            </div>
+    )
 }
 
 export default Jumbotron

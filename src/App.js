@@ -36,8 +36,9 @@ class App extends React.Component {
                     <Card
                     id={card.id}
                     key={card.id}
-                    image={card.image}
-                    clicked
+                    image={card.src}
+                    alt={card.alt}
+                    clicked={this.clicked}
                     />
                 ))}
                 <Footer />
