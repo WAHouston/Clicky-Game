@@ -1,0 +1,18 @@
+header {
+    background-color: #000000;
+    color: #478897;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    padding-top: 10px;
+}
+
+#score {
+    padding-left: 100px;
+}
+
+#topScore {
+    padding-right: 100px;
+}

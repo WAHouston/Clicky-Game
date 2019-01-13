@@ -1,5 +1,4 @@
 import React from "react"
-import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Jumbotron from "./components/Jumbotron"
 import Card from "./components/Card"
@@ -29,20 +28,21 @@ class App extends React.Component {
     
     render() {
         return (
-            <Wrapper>
-                <Header />
-                <Jumbotron />
-                {this.state.cards.map(card => (
-                    <Card
-                    id={card.id}
-                    key={card.id}
-                    image={card.src}
-                    alt={card.alt}
-                    clicked={this.clicked}
-                    />
-                ))}
-                <Footer />
-            </Wrapper>
+            <div>
+                <Header score={this.state.score} topScore={this.state.topScore}/>
+                <Wrapper>
+                    <Jumbotron />
+                    {this.state.cards.map(card => (
+                        <Card
+                        id={card.id}
+                        key={card.id}
+                        image={card.src}
+                        alt={card.alt}
+                        clicked={this.clicked}
+                        />
+                    ))}
+                </Wrapper>
+            </div>
         )
     }
 }
