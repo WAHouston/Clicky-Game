@@ -6,10 +6,13 @@
 
 h1 {
     font-size: 100px;
+    font-family: 'Charm', cursive;
     color: black;
 }
 
 h3 {
     color: black;
+    font-size: 30px;
+    font-family: 'Charm', cursive;
     padding-top: 30px;
 }
