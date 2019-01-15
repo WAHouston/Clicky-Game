@@ -1,62 +1,62 @@
 [
     {
         "id": 1,
-        "src": "/images/aboleth.jpeg",
+        "src": "./images/aboleth.jpeg",
         "alt": "aboleth"
     },
     {
         "id": 2,
-        "src": "/images/beholder.jpg",
+        "src": "./images/beholder.jpg",
         "alt": "beholder"
     },
     {
         "id": 3,
-        "src": "/images/ettercap.jpg",
+        "src": "./images/ettercap.jpg",
         "alt": "ettercap"
     },
     {
         "id": 4,
-        "src": "/images/nothic.jpg",
+        "src": "./images/nothic.jpg",
         "alt": "nothic" 
     },
     {
         "id": 5,
-        "src": "/images/illithid.jpg",
+        "src": "./images/illithid.jpg",
         "alt": "illithid"
     },
     {
         "id": 6,
-        "src": "/images/troglodyte.jpg",
+        "src": "./images/troglodyte.jpg",
         "alt": "troglodyte"
     },
     {
         "id": 7,
-        "src": "/images/sahuagin.jpg",
+        "src": "./images/sahuagin.jpg",
         "alt": "sahuagin"
     },
     {
         "id": 8,
-        "src": "/images/owlbear.jpg",
+        "src": "./images/owlbear.jpg",
         "alt": "owlbear"
     },
     {
         "id": 9,
-        "src": "/images/tarrasque.jpg",
+        "src": "./images/tarrasque.jpg",
         "alt": "tarrasque"
     },
     {
         "id": 10,
-        "src": "/images/dragon.jpeg",
+        "src": "./images/dragon.jpeg",
         "alt": "dragon"
     },
     {
         "id": 11,
-        "src": "/images/goblin.jpg",
+        "src": "./images/goblin.jpg",
         "alt": "goblin"
     },
     {
         "id": 12,
-        "src": "/images/modron.jpg",
+        "src": "./images/modron.jpg",
         "alt": "modron"
     }
 ]
