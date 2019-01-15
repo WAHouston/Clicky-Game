@@ -6,6 +6,7 @@ function Card(props) {
         <div className="card">
             <div className="img-container">
                 <img 
+                    draggable={false}
                     alt={props.name} 
                     src={props.image} 
                     onClick={() => props.clicked(props.id)}

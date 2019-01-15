@@ -16,14 +16,34 @@ class App extends React.Component {
     }
     
     clicked = (id) => {
+        let wrong = false
         this.setState({
             cards: this.state.cards.map((card) => {
                 if (card.id === id) {
+                    if (card.clicked) {
+                        wrong = true
+                    }
                     card.clicked = true
                 }
                 return card
+            }),
+            score: this.state.score + 1,
+            topScore: Math.max(this.state.topScore, this.state.score + 1)
+        })
+        if (wrong) {
+            this.restart()
+        }
+    }
+
+    restart = () => {
+        this.setState({
+            score: 0,
+            topScore: Math.max(this.state.topScore, this.state.score),
+            card: this.state.cards.map((card) => {
+                card.clicked = false
             })
         })
+
     }
     
     render() {
