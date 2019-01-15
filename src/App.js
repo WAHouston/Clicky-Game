@@ -33,6 +33,20 @@ class App extends React.Component {
         if (wrong) {
             this.restart()
         }
+        this.shuffle()
+    }
+
+    shuffle = () => {
+        let original = this.state.cards.slice(0)
+        let shuffled = []
+        for (let i = (original.length - 1); i >= 0; i--) {
+            let newIndex = Math.floor(Math.random() * original.length)
+            shuffled.push(original[newIndex])
+            original.splice(newIndex, 1)
+        }
+        this.setState({
+            cards: shuffled
+        })
     }
 
     restart = () => {
@@ -41,6 +55,7 @@ class App extends React.Component {
             topScore: Math.max(this.state.topScore, this.state.score),
             card: this.state.cards.map((card) => {
                 card.clicked = false
+                return card
             })
         })
 
